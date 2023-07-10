@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- /// CSS /// -->
+    <link rel="stylesheet" href="src/ress.css" />
+    <link rel="stylesheet" href="src/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&family=Noto+Sans+JP:wght@500;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css"
+    />
+    <!-- /// End CSS /// -->
+  </head>
+
+  <body>
+    <div class="cnt-bdy">
+      <header class="mn-hdr"></header>
+
+      <nav class="mn-nav"></nav>
+
+      <!-- /// Add Content Here /// -->
+      <main class="mn-cnt">
+        <div class="mn-cnt_bdy">
+          <div class="srch-unt utl-px-20 utl-py-15">
+            <input
+              id="js-add-txt"
+              class="srch-unt_inpt"
+              placeholder="TODOを入力"
+            />
+            <button id="js-add-btn" class="srch-unt_btn utl-ovr">追加</button>
+          </div>
+
+          <div class="todo-unt -in-cpl utl-mt-10 utl-px-25 utl-py-15">
+            <p class="todo-unt_b-cpy">未完了のTODO</p>
+
+            <ul id="js-in-cpl-lst" class="todo-lst -in-cpl"></ul>
+          </div>
+
+          <div class="todo-unt -cpl utl-mt-10 utl-px-25 utl-py-15">
+            <p class="todo-unt_b-cpy">完了したTODO</p>
+
+            <ul id="js-cpl-lst" class="todo-lst -cpl"></ul>
+          </div>
+        </div>
+      </main>
+      <!-- /// End Add Content Here /// -->
+
+      <footer class="mn-ftr"></footer>
+    </div>
+
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="src/index.js"></script>
+  </body>
+</html>
